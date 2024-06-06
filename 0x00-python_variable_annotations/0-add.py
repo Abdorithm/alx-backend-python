@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
-""" adds two numbers """
+""" add: statically typed function """
 
 
 def add(a: float, b: float) -> float:
-    """ returns a + b """
+    """
+    a: first float
+    b: second float
+    
+    return: float (a + b)
+    """
     return a + b
