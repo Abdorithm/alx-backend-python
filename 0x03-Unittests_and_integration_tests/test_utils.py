@@ -36,7 +36,7 @@ class TestAccessNestedMap(unittest.TestCase):
             ["http://holberton.io", {"payload": False}],
         ])
         def test_get_json(self, test_url, test_payload):
-            """ test get json """
+            """ test get json method with mock class """
             attrs = {"json.return_value": test_payload}
             with patch("requests.get", return_value=Mock(**attrs)) as req_get:
                 self.assertEqual(get_json(test_url), test_payload)
